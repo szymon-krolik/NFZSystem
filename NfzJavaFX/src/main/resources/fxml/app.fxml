@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="appBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AppController">
+   <top>
+      <Pane prefHeight="101.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="250.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tutaj staty przychodni " textAlignment="CENTER" />
+            <Button fx:id="exitButton" layoutX="540.0" layoutY="2.0" mnemonicParsing="false" text="X" />
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="77.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Userzty akcje" />
+            <Button fx:id="userMenuButton" layoutX="74.0" layoutY="90.0" mnemonicParsing="false" text="users" />
+         </children>
+      </Pane>
+   </left>
+   <right>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="89.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pacjenci akcje" />
+            <Button fx:id="patientMenuButton" layoutX="74.0" layoutY="81.0" mnemonicParsing="false" text="patients" />
+         </children>
+      </Pane>
+   </right>
+   <center>
+      <Button fx:id="adminMenuButton" mnemonicParsing="false" text="admin" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
